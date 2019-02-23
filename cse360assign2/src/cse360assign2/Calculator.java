@@ -18,27 +18,32 @@ public class Calculator {
 	
 	//gets the total value
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	//adds value to total
 	public void add (int value) {
-		
+		total = total + value;
 	}
 	
 	//subtracts value from total
 	public void subtract (int value) {
-		
+		total = total - value;
 	}
 	
 	//multiplies total by value
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	
 	//divides total by value
 	public void divide (int value) {
-		
+		if(value == 0) {
+			total = 0;
+		}
+		else {
+			total = total / value;
+		}
 	}
 	
 	//gets history of past operations used
